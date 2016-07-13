@@ -122,7 +122,27 @@ the boolean expression causes a call to the ``isDivisible`` function.  This is v
 
      return x + y < z
 
+.. mchoice:: test_question6_8_3
+   :answer_a: return True
+   :answer_b: return False
+   :answer_c: return isEq
+   :answer_d: return num1 > num2
+   :correct: c
+   :feedback_a: This return statement does not change based on the values of the input. 
+   :feedback_b: This return statement does not change based on the values of the input.
+   :feedback_c: isEq is a variable that is equal to a boolean based on the equality of the two input values.
+   :feedback_d: This return statement would only output True if the first input number is greater than the second input number.
 
+   Select the return statement that would make this function return a boolean value that represents whether the input numbers are equal.
+
+   .. code-block:: python
+
+     def isEqual(num1, num2):
+        if num1 == num2:
+            isEq = True
+        else:
+            isEq = False
+        #return statement
 
 .. note::
 

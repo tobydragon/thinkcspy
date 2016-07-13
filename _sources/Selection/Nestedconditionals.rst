@@ -80,13 +80,13 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
 **Check your understanding**
 
 .. mchoice:: test_question6_6_1
-   :answer_a: No
-   :answer_b: Yes
+   :answer_a: Yes
+   :answer_b: No
    :correct: a
    :feedback_a: This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
    :feedback_b: This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
 
-   Will the following code cause an error?
+   Is this valid Python code?
 
    .. code-block:: python
 
@@ -99,6 +99,74 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
          else:
              print(x," is 0")
 
+   .. tag test_questions6_6_1: If Statement, Boolean Expression, Nested
+
+.. mchoice:: test_question6_6_2
+   :answer_a: Yes
+   :answer_b: No
+   :correct: a
+   :feedback_a: These two blocks of code will print the same sequence of statements while x is equal to 10.
+   :feedback_b: These two blocks of code will print the same sequence of statements while x is equal to 10.
+
+   Do these two blocks of code print the same thing?
+   
+   .. code-block:: python
+     
+     x = 10
+     if x < 20:
+         print("Less than 20")
+     if x > 0:
+         print("Greater than 0")
+     if x == 10:
+         print("Equal to 10")
+   ::
+
+     x = 10
+     if x < 20:
+         if x > 0:
+             print("Less than 20")
+             print("Greater than 0)
+     if x == 10:
+         print("Equal to 10)
+
+   .. tag test_questions6_6_2: If Statement, Boolean Expression, Nested
+
+.. mchoice:: test_question6_6_3
+   :answer_a: Yes
+   :answer_b: No
+   :correct: a
+   :feedback_a: In this case, conjunctions are used in the same way as nested loops.
+   :feedback_b: In this case, conjunctions are used in the same way as nested loops.
+
+   Do these two blocks of code print the same thing?
+   
+   .. code-block:: python
+     
+     x = 12
+     if x % 2 == 0:
+         if x % 3 == 0:
+             if x % 4 == 0:
+                 if x % 6 == 0:
+                     print("Factors are 2,3,4,6")
+   ::
+
+     x = 12
+     if (x % 2 == 0) and (x % 3 == 0) and (x % 4 == 0) and (x % 6 == 0):
+         print("Factors are 2,3,4,6")
+
+   .. tag test_questions6_6_3: If Statement, Boolean Expression, Nested, Logical Operators
+   
+   
+.. mchoice:: test_question6_6_4
+   :answer_a: Nested if statements all get evaluated, regardless of whether or not the previous statements evaluated to True.
+   :answer_b: Not every if statement gets evaluated in runtime because the conditions may have not been met to reach a given if statement.
+   :correct: b
+   :feedback_a: Not all if statements get evaluated.
+   :feedback_b: Some if statements do not get evaluated in runtime if they are not reached based on given conditions.
+
+   Which statement is true?
+
+   .. tag test_questions6_6_4: Nested
 
 .. index::
     single: chained conditional

@@ -56,6 +56,61 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
    :feedback_d: Yes, with an and keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true.
 
    What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5.
+   
+   .. tag test_questions6_2_1: Boolean, Boolean Expression, Logical Operators
+   
+.. mchoice:: test_question6_2_2
+    :answer_a: x / 2 == True and x / 7 == False
+    :answer_b: x % 2 == 0 and x % 7 == 0
+    :answer_c: x % 2 == 0 or x % 7 == 0
+    :answer_d: x / 7 == False or x / 2 == True
+    :correct: b
+    :feedback_a: x / 2 == True is not how you determine if a number is even. x / 7 == False is not how you determine if a number is divisible by 7.
+    :feedback_b: This expression only evaluates to True if x is evenly divisible by 2 AND evenly divisible by 7. Both comparisons must be True in order for the whole expression to be True.
+    :feedback_c: This expression will evaluate to True if either comparison is True. But we want an expression that depends on both comparisons to be True.
+    :feedback_d: x / 7 == False is not how you determine if a number is divisible by 7. x / 2 == True is not how you determine if a number is even.
+    
+    Which of these expressions evaluates to True if x is equal to a number that is both even and divisible by 7?
+    
+    .. tag test_questions6_2_2: Boolean, Boolean Expression, Logical Operators
+    
+.. mchoice:: test_question6_2_3
+    :multiple_answers:
+    :answer_a: x &gt;= 3 or x &lt; 20
+    :answer_b: not x &lt; 3 and not x &gt;= 20
+    :answer_c: x &gt;= 3 and not x &gt;= 20
+    :answer_d: x &gt;= 3 and x &lt; 20
+    :correct: a,b,c,d
+    
+    Which of these expressions evaluates to True if x is equal to 10? Select all that apply. 
 
+    .. tag test_questions6_2_3: Boolean, Boolean Expression, Logical Operators
+    
+.. mchoice:: test_question6_2_4
+    :answer_a: 2
+    :answer_b: 1
+    :answer_c: &gt;= 1
+    :answer_d: &gt;= 0
+    :correct: d
+    :feedback_a: One expression can have more than two logical operators.
+    :feedback_b: One expressions can have more than one logical operator.
+    :feedback_c: One expression can have less than one logical operator.
+    :feedback_d: One expression can have any number of logical operators within its computational power.
+    
+    How many logical operators can you have in one expression? 
 
+    .. tag test_questions6_2_4: Logical Operators
+    
+.. mchoice:: test_question6_2_5
+    :answer_a: True
+    :answer_b: False
+    :answer_c: 3
+    :correct: a
+    :feedback_a: In the context of a Boolean expression, 3 evalutes to True, so this expression evaluates to True.
+    :feedback_b: Neither half of the expression evaluates to False.
+    :feedback_c: 3 outside of the context of a Boolean expression would evalute to 3, but because it is being compared in a Boolean expression it defaults to True.
+    
+    If x = 2, what will this expression evaluate to? 3 and x > 0 
 
+    .. tag test_questions6_2_5: Boolean, Boolean Expressions, Logical Operators
+    

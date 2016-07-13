@@ -91,6 +91,26 @@ is legal and ``7 = a`` is not. (Can you explain why?)
 
 .. mchoice:: test_question6_1_1
    :multiple_answers:
+   :answer_a: &quot;True&quot;
+   :answer_b: true
+   :answer_c: True
+   :answer_d: false
+   :answer_e: False
+   :correct: c,e
+   :feedback_a: &quot;True&quot; is a String, not a Boolean.
+   :feedback_b: true with a lowercase t is not a reserved word in Python, not a Boolean.
+   :feedback_c: True is a Boolean value.
+   :feedback_d: false with a lowercase f is not a reserved word in Python, not a Boolean.
+   :feedback_e: False is a Boolean value.
+
+   Which of the following is a Boolean?  Select all that apply.
+   
+   .. tag test_questions6_1_1: Boolean
+   
+
+
+.. mchoice:: test_question6_1_2
+   :multiple_answers:
    :answer_a: True
    :answer_b: 3 == 4
    :answer_c: 3 + 4
@@ -104,7 +124,45 @@ is legal and ``7 = a`` is not. (Can you explain why?)
    :feedback_e: With the double quotes surrounding it, False is interpreted as a string, not a Boolean value.  If the quotes had not been included, False alone is in fact a Boolean value.
 
    Which of the following is a Boolean expression?  Select all that apply.
+   
+   .. tag test_questions6_1_2: Boolean, Boolean Expression, Data Types
+   
+   
+   
+.. mchoice:: question6_1_3
+   :multiple_answers:
+   :answer_a: 6 <= 9
+   :answer_b: True == &quot;True&quot;
+   :answer_c: &quot;False&quot; != False
+   :answer_d: 7 == 4
+   :answer_e: 9 + 6 == 15 
+   :correct: a,c,e
+   :feedback_a: This evaluates to True 6 is certainly less than or equal to 9.
+   :feedback_b: This evaluates to False. The Boolean value: True, is not equal to the String value: &quot;True&quot;. 
+   :feedback_c: This evaluates to True. The String value: &quot;False&quot;, does not equal the Boolean value: False. But the expression evaluates whether or not these two items are NOT equal. Because they are not equal, this evaluates to True.
+   :feedback_d: This evaluates to False because 7 does not equal 4.
+   :feedback_e: This evaluates to True because the sum of 9 and 6 is equal to 15.
 
+   Which of these expressions evaluates to True? Select all that apply.
+
+   .. tag test_questions6_1_3: Boolean, Boolean Expression, Expressions
+   
+   
+.. mchoice:: question6_1_4
+   :answer_a: when comparing Strings to see if they are equal
+   :answer_b: when assessing whether a number is greater than another number
+   :answer_c: when assigning a number to a variable
+   :answer_d: when comparing the value of two variables
+   :correct: c
+   :feedback_a: You should use a Boolean expression to evaluate whether two Strings are equal.
+   :feedback_b: You should use a Boolean expression to evaluate whether a number is greater than another number.
+   :feedback_c: Boolean expressions are not used for assignment. One equal sign ( = ) is used for assignment and two equal signs ( == ) are used for comparison.
+   :feedback_d: You should use a Boolean expression to compare two variables
+
+   When would you NOT use a Boolean expression?
+
+   .. tag test_questions6_1_4: Boolean Expressions
+   
 .. index::
     single: logical operator
     single: operator; logical

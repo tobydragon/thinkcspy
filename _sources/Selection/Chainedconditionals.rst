@@ -150,5 +150,26 @@ Here is the same program using ``elif``.
      else:
          print("c")
 
+.. mchoice:: test_question6_7_3
+   :answer_a: x = 7
+   :answer_b: x = 3
+   :answer_c: x = 10
+   :answer_d: x = 0
+   :correct: b
+   :feedback_a: 
+   :feedback_b:
+   :feedback_c:
+   :feedback_d:
+
+   Which input will have the program output "Python Program"?
+
+   .. code-block:: python
+
+     if x > 15:
+         print("Java Program")
+     elif x == 3:
+         print("Python Program")
+     else:
+         print("C++ Program")
 
 

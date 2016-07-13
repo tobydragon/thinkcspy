@@ -82,6 +82,7 @@ There is no limit on the number of statements that can appear under the two clau
 
 **Check your understanding**
 
+
 .. mchoice:: test_question6_4_1
    :answer_a: Just one.
    :answer_b: Zero or more.
@@ -93,7 +94,9 @@ There is no limit on the number of statements that can appear under the two clau
    :feedback_c: Yes, a block must contain at least one statement and can have many statements.
    :feedback_d: The blocks may contain different numbers of statements.
 
-   How many statements can appear in each block (the if and the else) in a conditional statement?
+   How many statements or lines can appear in each block (the if and the else) in a conditional statement?
+   
+   .. tag test_questions6_4_1: If Statement
 
 .. mchoice:: test_question6_4_2
    :answer_a: TRUE
@@ -115,7 +118,8 @@ There is no limit on the number of statements that can appear under the two clau
      else:
          print("FALSE")
 
-
+   .. tag test_questions6_4_2: If Statement, Boolean Expression
+   
 .. mchoice:: test_question6_4_3
    :answer_a: Output a
    :answer_b: Output b
@@ -152,8 +156,76 @@ There is no limit on the number of statements that can appear under the two clau
          TRUE
          FALSE
          TRUE
+  
+   .. tag test_questions6_4_3: If Statement, Boolean Expression
+  
+.. mchoice:: test_question6_4_4
+   :multiple_answers:
+   :answer_a: Code A
+   :answer_b: Code B
+   :answer_c: Code C
+   :answer_d: Code D
+   :correct: a,b,c,d
+   :feedback_a: 
+   :feedback_b: 
+   :feedback_c: 
+   :feedback_d: 
 
+   Select the code blocks that outputs "Python Program".
 
+   .. code-block:: python
+     
+     # Code Block A
+     x = 10
+     if x == 10:
+        print("Python")
+     print("Program")
+
+   ::
+
+    # Code Block B
+    x = 10
+    if x == 10:
+        print("Python")
+    else:
+        print("10")
+    print("Program")
+    
+   ::
+    
+    # Code Block C
+    x = 10
+    print("Python")
+    if x == 10:
+        print("Program")
+    else:
+        print(10)
+        
+   ::
+    
+    # Code Block D
+    x = 10
+    print("Python")
+    if x != 10:
+        print(10)
+    else:
+        print("Program")
+
+   .. tag test_questions6_4_4: If Statement, Boolean Expression
+   
+.. mchoice:: test_question6_4_5
+   :multiple_answers:
+   :answer_a: When you have code that you only want to execute under a certain condition.
+   :answer_b: When you have two different paths in your code.
+   :answer_c: When you have multiple paths in your code.
+   :correct: a,b,c
+   :feedback_a: You can use a single if statement to execute this plan.
+   :feedback_b: You can use an if-else block to execute this plan.
+   :feedback_c: You can use chained conditionals to execute this plan.
+
+   When is it appropriate to use if statements? Select all that apply.
+   
+   .. tag test_questions6_4_5: If Statement
 
 .. index:: alternative execution, branch, wrapping code in a function
 

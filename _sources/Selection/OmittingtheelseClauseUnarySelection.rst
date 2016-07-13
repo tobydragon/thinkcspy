@@ -70,14 +70,16 @@ What would be printed if the value of ``x`` is negative?  Try it.
    ::
 
      a.
-     This is always printed
+     "This is always printed"
 
      b.
-     The negative number -10 is not valid here
-     This is always printed
+     "The negative number -10 is not valid here"
+     "This is always printed"
 
      c.
-     The negative number -10 is not valid here
+     "The negative number -10 is not valid here"
+     
+   .. tag test_questions6_5_1: If Statement, Boolean Expression
 
 
 .. mchoice:: test_question6_5_2
@@ -98,7 +100,63 @@ What would be printed if the value of ``x`` is negative?  Try it.
          print(x, " is a positive number")
      else:
          print("This is always printed")
+         
+   .. tag test_questions6_5_2: If Statement, Boolean Expression
 
+.. mchoice:: test_question6_5_3
+   :answer_a: 7
+   :answer_b: 15
+   :answer_c: 4
+   :answer_d: 10
+   :correct: c
+   :feedback_a: x was not assigned the value of 7 because the if statement (if x == 15) did not evaluate to True.
+   :feedback_b: x was not assigned the value of 15 because the if statement (if x == 10) evaluated to True so that the else statement was ignored.
+   :feedback_c: x was assigned the value of 4 and was not changed again before printing it.
+   :feedback_d: x was originally assigned the value of 10, but was later reassigned another value.
+    
+    What will this program output?
+    
+    .. code-block:: python
+    
+     x = 10
+     if x == 10:
+         x = 4
+     else: 
+         x = 15
+     if x = 15:
+         x = 7
+     print(x)
+    
+   .. tag test_questions6_5_3: If Statement, Boolean Expression, Assignment
+    
+.. mchoice:: test_question6_5_4
+   :answer_a: "Alice is a student!"
+   :answer_b: "Alex is a student!"
+   :answer_c: "Alice is not a student!"
+   :answer_d: "Alex is not a student!"
+   :correct: c
+   :feedback_a: isStudent is False so it will not print that the individual is a student.
+   :feedback_b: isStudent is False so it will not print that the individual is a student.
+   :feedback_c: name is equal to "Alice" and isStudent is equal to False.
+   :feedback_d: name is not equal to Alex.
+    
+    What will this program output?
+    
+    .. code-block:: python
+    
+     isStudent = False
+     name = "Alice"
+     
+     if name == "Alex":
+         isStudent = True
+     
+     if isStudent == True:
+         print(name, "is a student!")
+     else:
+         print(name, "is not a student!")
+    
+   .. tag test_questions6_5_4: If Statement, Boolean Expression, Assignment
+    
 .. index::
     single: nested conditionals
     single: conditionals; nested
